@@ -7,73 +7,47 @@
     <title>Piedra, Papel o Tijera</title>
         <script>
 
-            // 1 es piedra, 2 es papel, 3 es tijera 
-            let jugador = 0
+            // variables
+            let jugador = 
             let pc = 
             jugador = prompt ("1 es piedra, 2 es papel, 3 es tijera");
 
             // bot gana siempre 
-            if (jugador == 1)
-            {
-                pc = 2
-            }
-            else if (jugador == 2 )
-            {
-                pc = 3
-            }
-            else if (jugador == 3)
-            {
-                pc = 1
-            }
             
-                // variables del jugador 
-            if ( jugador == 1) 
-            {
-                alert("elegiste ✊")
-            }
-            else if (jugador== 2)
-            {
-                alert("elegiste ✋")
-            }
-            else if ( jugador == 3)
-            {
-                alert("elegiste ✌️")
-            }
-            else 
-            {
-                alert("entrada no valida")
-            }
-                // variables  del bot
-            if ( pc == 1) 
-            {
-                alert("bot eligio  ✊")
-            }
-            else if (pc == 2)
-            {
-                alert("bot eligio ✋")
-            }
-            else if ( pc  == 3)
-            {
-                alert("bot eligio ✌️")
-            }
-                // combate 
+            if (jugador == 1){pc = 2}
+            
+            else if (jugador == 2 ){pc = 3 }
+            
+            else if (jugador == 3){pc = 1}
+            
+            // condicionales del jugador 
+            
+            if ( jugador == 1){alert("elegiste ✊")}
+            
+            else if (jugador== 2){alert("elegiste ✋")}
+            
+            else if ( jugador == 3){alert("elegiste ✌️")}
+            
+            else {alert("entrada no valida")}
+            
+            // condicionales  del bot
+            
+            if ( pc == 1){alert("bot eligio  ✊")}
+            
+            else if (pc == 2){alert("bot eligio ✋")}
+            
+            else if ( pc  == 3){alert("bot eligio ✌️")}
+            
+            // combate 
 
-            if(pc == jugador) 
-            {
-                alert("empate")
-            }
-            else if (jugador == 1 && pc == 3 )
-            {
-                alert("ganaste")
-            }
-            else if ( jugador== 2 && pc == 1 )
-            {
-                alert("ganaste")
-            }
-            else 
-            {
-                alert("perdiste")
-            }
+            if(pc == jugador) {alert("empate")}
+            
+            else if (jugador == 1 && pc == 3 ){alert("ganaste")}
+            
+            else if ( jugador== 2 && pc == 1 ){alert("ganaste")}
+            
+            else {alert("perdiste")}
+            
         </script>
 </head>
 <body>
